@@ -4,6 +4,17 @@ app.factory('Auth', function ($firebaseSimpleLogin, FIREBASE_URL, $rootScope, $f
   var ref = new Firebase(FIREBASE_URL);
   var auth = $firebaseSimpleLogin(ref);
 
+  //facebook login
+
+  // ref.authWithOAuthPopup("facebook", function(error, authData) {
+  // if (error) {
+  //   console.log("Login Failed!", error);
+  // } else {
+  //   console.log("Authenticated successfully with payload:", authData);
+  // }
+  // });
+
+  
   var Auth = {
     register: function (user) {
       return auth.$createUser(user.email, user.password);

@@ -20,10 +20,10 @@ var app = angular
     'ngTouch',
     'firebase'
   ])
-  .constant('FIREBASE_URL', 'https://nicho.firebaseIO.com/')
+  .constant('FIREBASE_URL', 'https://nickisgod.firebaseIO.com/')
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/', {
+      .when('/posts', {
         templateUrl: 'views/posts.html',
         controller: 'PostsCtrl'
       })
@@ -48,6 +48,13 @@ var app = angular
             return Auth.resolveUser();
           }
         }
+      })
+      .when('/', {
+        templateUrl: 'views/main.html',
+      })
+      .when('/dashboard', {
+        templateUrl: ' views/dashboard.html',
+        controller: 'DashboardCtrl'
       })
       .when('/users/:userId', {
         templateUrl: 'views/profile.html',

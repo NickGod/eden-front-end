@@ -11,9 +11,12 @@
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <!-- endbower -->
     <!-- endbuild -->
+    <link rel="stylesheet" href="bower_components/Bootflat/bootflat/css/bootflat.css" />
+
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+
   </head>
   <body ng-app="angNewsApp">
     <!--[if lt IE 7]>
@@ -42,6 +45,9 @@
     <script src="bower_components/json3/lib/json3.js"></script>
     <![endif]-->
     <!-- endbuild -->
+
+    <script src="bower_components/Bootflat/bootflat/js/jquery.fs.selecter.min.js"> </script>
+    <script src="bower_components/Bootflat/bootflat/js/jquery.fs.stepper.min.js"> </script>
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
@@ -74,4 +80,23 @@
         <script src="scripts/filters/url.js"></script>
         <!-- endbuild -->
 </body>
+
+<!-- facebook SDK init --> 
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '911701198875086',
+      xfbml      : true,
+      version    : 'v2.2'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
 </html>

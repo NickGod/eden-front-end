@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default" role="navigation">
+<nav class="navbar navbar-default navbar-fixed-top one-edge-shadow green" role="navigation">
   <!-- Brand and toggle get grouped for better mobile display -->
   <div class="navbar-header">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -7,7 +7,7 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="#">EDEN</a>
+    <a class="navbar-brand" style="color: white;" href="#">EDEN</a>
   </div>
 
   <!-- Collect the nav links, forms, and other content for toggling -->
@@ -26,7 +26,7 @@
     </form>
     <ul class="nav navbar-nav navbar-right">
       <li ng-show="signedIn()">
-        <p class="navbar-text">{{ user.profile.username }}</p>
+        <p class="navbar-text" style="color: white">{{ user.profile.username }}</p>
       </li>
       <li ng-show="signedIn()">
         <a ng-href="#/users/{{ user.uid }}">
@@ -35,13 +35,13 @@
         </a>
       </li>
       <li ng-show="signedIn()">
-        <a ng-href="#" ng-click="logout()">Logout</a>
+        <a ng-href="#" ng-click="logout()" style="color: white">Logout</a>
       </li>
       <li ng-hide="signedIn()">
-        <a href="#/login">Login</a>
+        <a href="#/login" style = "color: white">Login</a>
       </li>
       <li ng-hide="signedIn()">
-        <a href="#/register">Register</a>
+        <a href="#/register" style = "color: white">Register</a>
       </li>
     </ul>
   </div><!-- /.navbar-collapse -->
