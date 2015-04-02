@@ -14,7 +14,9 @@
   <div ng-controller="NavCtrl" class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <form class="navbar-form navbar-left" role="search" ng-submit="submitPost()" ng-show="signedIn()">
 
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">What is your pain?</button>
+<!--       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">What is your pain?</button> -->
+
+      <a href="#/news"> <button type="button" class="btn btn-primary"> News Feed </button> </a>
 
 <!--       <div class="form-group">
         <input type="text" class="form-control" placeholder="Title" ng-model="post.title">
@@ -48,7 +50,7 @@
 </nav>
 
 <!-- modal -->
-     <div ng-controller="NavCtrl" class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!--  <div ng-controller="NavCtrl" class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -72,5 +74,5 @@
           <div class="modal-footer">
           </div>
         </div>
-      </div>
+      </div> -->
     </div>

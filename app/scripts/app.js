@@ -20,7 +20,7 @@ var app = angular
     'ngTouch',
     'firebase'
   ])
-  .constant('FIREBASE_URL', 'https://nickisgod.firebaseIO.com/')
+  .constant('FIREBASE_URL', 'https://edentest1.firebaseio.com/')
   .config(function ($routeProvider) {
     $routeProvider
       .when('/posts', {
@@ -30,6 +30,10 @@ var app = angular
       .when('/posts/:postId', {
         templateUrl: 'views/showpost.html',
         controller: 'PostViewCtrl'
+      })
+      .when('/news', {
+        templateUrl: 'views/news.html',
+        controller: 'NewsCtrl'
       })
       .when('/register', {
         templateUrl: 'views/register.html',

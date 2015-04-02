@@ -1,10 +1,9 @@
 {
-  "firebase": "ang-news-v2",
-  "public": "dist",
+  "firebase": "edentest1",
+  "public": "./app",
   "ignore": [
     "firebase.json",
     "**/.*",
     "**/node_modules/**"
-  ],
-  "rules": "security-rules.json"
+  ]
 }
